@@ -1,0 +1,4 @@
+# Tools with sensitive tokens or non-config data
+github-copilot/
+uv/
+.DS_Store
