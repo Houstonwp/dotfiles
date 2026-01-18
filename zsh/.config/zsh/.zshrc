@@ -24,6 +24,14 @@ export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 export ZSH="${XDG_CONFIG_HOME}/oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 
+# --- Secrets (macOS Keychain) ---------------------------------------------
+# if [[ -z ${OPENAI_API_KEY:-} ]]; then
+#  key=$(
+#    security find-generic-password -a "$USER" -s OPENAI_API_KEY -w 2>/dev/null
+#  )
+#  [[ -n $key ]] && export OPENAI_API_KEY=$key
+# fi
+# --------------------------------------------------------------------------
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -100,6 +108,7 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   macos
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -127,6 +136,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias grep='rg --no-heading --smart-case --color=auto'
+
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363A4F,bg:#24273A,spinner:#F4DBD6,hl:#ED8796 \
 --color=fg:#CAD3F5,header:#ED8796,info:#C6A0F6,pointer:#F4DBD6 \
@@ -141,4 +152,8 @@ export PATH="$CARGO_HOME/bin:$PATH"
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
+eval "$(gh copilot alias -- zsh)"
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+eval "$(atuin init zsh)"
+
