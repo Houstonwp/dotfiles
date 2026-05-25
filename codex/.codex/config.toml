@@ -1,0 +1,199 @@
+model = "gpt-5.5"
+model_reasoning_effort = "xhigh"
+personality = "pragmatic"
+
+notify = ["/Users/houstonp/.codex/computer-use/Codex Computer Use.app/Contents/SharedSupport/SkyComputerUseClient.app/Contents/MacOS/SkyComputerUseClient", "turn-ended"]
+approval_policy = "on-request"
+approvals_reviewer = "guardian_subagent"
+sandbox_mode = "workspace-write"
+
+[projects."/Users/houstonp/dev/dcc"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/ak"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/ai-actuary"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/mort"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/gh-up"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/gh-down"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/ectui"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp"]
+trust_level = "untrusted"
+
+[projects."/Users/houstonp/dev/great-docs"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/ak.wiki"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/codex-menu"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/ibcs"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/resume.houstonperrett.com"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/transcripts"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/QuietScribe"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/UtterText"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/uttertext.houstonp.com"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/hg"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/Documents/Codex/2026-05-24/review-all-files-in-downloads-and"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/Documents/Codex/2026-05-24/i-want-to-organize-the-bookmarks"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/Documents/Codex/2026-05-25/make-hidden-folders-always-visible-in"]
+trust_level = "trusted"
+
+[projects."/Users/houstonp/dev/dotfiles"]
+trust_level = "trusted"
+
+[notice]
+"hide_gpt-5.1-codex-max_migration_prompt" = true
+
+[notice.model_migrations]
+"gpt-5.1-codex-max" = "gpt-5.2-codex"
+
+[features]
+rmcp_client = true
+multi_agent = true
+memories = true
+prevent_idle_sleep = true
+terminal_resize_reflow = true
+goals = true
+js_repl = false
+
+[plugins."github@openai-curated"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."openai-developers@openai-curated"]
+enabled = true
+
+[plugins."build-macos-apps@openai-curated"]
+enabled = true
+
+[plugins."build-ios-apps@openai-curated"]
+enabled = true
+
+[plugins."build-web-apps@openai-curated"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[marketplaces.openai-bundled]
+last_updated = "2026-05-25T03:17:25Z"
+source_type = "local"
+source = "/Users/houstonp/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-05-21T21:05:23Z"
+source_type = "local"
+source = "/Users/houstonp/.cache/codex-runtimes/codex-primary-runtime/plugins/openai-primary-runtime"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_update_issue]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_create_pull_request]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_reply_to_review_comment]
+approval_mode = "approve"
+
+[apps.connector_76869538009648d5b282a4bb21c3d157.tools.github_resolve_review_thread]
+approval_mode = "approve"
+
+[tui]
+status_line = ["model-with-reasoning", "current-dir", "git-branch", "context-used", "five-hour-limit", "weekly-limit"]
+theme = "catppuccin-mocha"
+
+[tui.model_availability_nux]
+"gpt-5.5" = 4
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+[mcp_servers.node_repl]
+args = []
+command = "/Applications/Codex.app/Contents/Resources/node_repl"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+BROWSER_USE_MARKETPLACE_NAME = "openai-bundled"
+CODEX_CLI_PATH = "/Applications/Codex.app/Contents/Resources/codex"
+CODEX_HOME = "/Users/houstonp/.codex"
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = ""
+NODE_REPL_NODE_PATH = "/Applications/Codex.app/Contents/Resources/node"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "167fdf579477181fba1773c1efb067b00c5a64fe85dafb50a2001bde198dc739"
+NODE_REPL_TRUSTED_CODE_PATHS = "/Users/houstonp/.codex"
+NODE_REPL_UNTRUSTED_ENV_ALLOWLIST = "BROWSER_USE_MARKETPLACE_NAME"
+SKY_CUA_SERVICE_PATH = "/Users/houstonp/.codex/.tmp/bundled-marketplaces/openai-bundled/plugins/computer-use/Codex Computer Use.app"
+
+[[skills.config]]
+path = "/Users/houstonp/dev/ak/.codex/skills/epic-plan/SKILL.md"
+enabled = false
+
+[[skills.config]]
+path = "/Users/houstonp/.codex/skills/codex-primary-runtime/spreadsheets/SKILL.md"
+enabled = false
+
+[[skills.config]]
+path = "/Users/houstonp/.codex/skills/codex-primary-runtime/slides/SKILL.md"
+enabled = false
+
+[sandbox_workspace_write]
+network_access = true
+
+[desktop]
+ambient-suggestions-enabled = false
+reviewDelivery = "detached"
+preventSleepWhileRunning = true
+keepRemoteControlAwakeWhilePluggedIn = true
+git-create-pull-request-as-draft = false
+git-pull-request-merge-method = "squash"
+selected-avatar-id = "custom:brindle"
+
+[memories]
+disable_on_external_context = true

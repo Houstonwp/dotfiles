@@ -1,4 +1,36 @@
 # Tools with sensitive tokens or non-config data
+gh/.config/gh/hosts.yml
+aws/.config/aws/credentials
 github-copilot/
 uv/
 .DS_Store
+
+# Codex state, auth, caches, and generated runtime data
+codex/.codex/.codex-global-state.json*
+codex/.codex/.tmp/
+codex/.codex/ambient-suggestions/
+codex/.codex/archived_sessions/
+codex/.codex/auth.json
+codex/.codex/cache/
+codex/.codex/computer-use/
+codex/.codex/generated_images/
+codex/.codex/goals*.sqlite*
+codex/.codex/hatch-pet-runs/
+codex/.codex/history.json*
+codex/.codex/installation_id
+codex/.codex/log/
+codex/.codex/logs*.sqlite*
+codex/.codex/memories/
+codex/.codex/models_cache.json
+codex/.codex/node_repl/
+codex/.codex/plugins/cache/
+codex/.codex/session_index.jsonl
+codex/.codex/sessions/
+codex/.codex/shell_snapshots/
+codex/.codex/sqlite/
+codex/.codex/state*.sqlite*
+codex/.codex/tmp/
+codex/.codex/update-check.json
+codex/.codex/vendor_imports/
+codex/.codex/version.json
+codex/.codex/worktrees/
