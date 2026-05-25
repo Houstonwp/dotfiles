@@ -138,7 +138,7 @@ export FZF_DEFAULT_OPTS=" \
 --color=border:#363A4F,label:#CAD3F5"
 
 export PATH="$CARGO_HOME/bin:$PATH"
-. "$HOME/.local/bin/env"
+[[ -r "$HOME/.local/bin/env" ]] && . "$HOME/.local/bin/env"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)

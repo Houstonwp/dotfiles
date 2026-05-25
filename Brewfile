@@ -5,7 +5,6 @@ tap "homebrew/services"
 tap "jesseduffield/lazygit"
 tap "nikitabobko/tap"
 tap "oven-sh/bun"
-tap "rconroy293/seventeenlands"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
 # Official Amazon AWS command-line interface
