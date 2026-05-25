@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Path to your oh-my-zsh installation.
-export ZSH="/Users/houstonp/.oh-my-zsh"
 # XDG Base Directories
 export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_CACHE_HOME="${HOME}/.cache"
@@ -22,7 +20,6 @@ export CARGO_HOME="${XDG_DATA_HOME}/cargo"
 export RUSTUP_HOME="${XDG_DATA_HOME}/rustup"
 
 export ZSH="${XDG_CONFIG_HOME}/oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
 
 # --- Secrets (macOS Keychain) ---------------------------------------------
 # if [[ -z ${OPENAI_API_KEY:-} ]]; then
@@ -133,11 +130,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias grep='rg --no-heading --smart-case --color=auto'
-
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#363A4F,bg:#24273A,spinner:#F4DBD6,hl:#ED8796 \
 --color=fg:#CAD3F5,header:#ED8796,info:#C6A0F6,pointer:#F4DBD6 \
@@ -145,15 +137,12 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#494D64 \
 --color=border:#363A4F,label:#CAD3F5"
 
-# Created by `pipx` on 2022-05-25 00:07:29
-export PATH="$PATH:/Users/houstonp/.local/bin"
 export PATH="$CARGO_HOME/bin:$PATH"
+. "$HOME/.local/bin/env"
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-eval "$(gh copilot alias -- zsh)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
-

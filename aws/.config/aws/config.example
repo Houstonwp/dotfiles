@@ -1,0 +1,7 @@
+[default]
+region = us-east-1
+output = json
+
+[profile example-admin]
+region = us-east-1
+mfa_serial = arn:aws:iam::123456789012:mfa/example-user
