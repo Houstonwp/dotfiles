@@ -14,17 +14,11 @@
 - zsh -> ~/.config/zsh
 - zshenv -> ~/.zshenv
 
-## Inventory (not tracked)
-- secrets and auth: ~/.ssh, ~/.aws, ~/.config/aws/credentials, ~/.codex/auth.json, gh hosts.yml
-- application state: ~/.cache, ~/.local/state, ~/.local/share/atuin, ~/.codex/sessions, ~/.codex/logs, ~/.codex/worktrees
-- generated tool data: ~/.cargo registries, ~/.rustup toolchains, ~/.local/share/uv, ~/.local/share/nvim, ~/.local/share/gh
-- history files: ~/.zsh_history, ~/.duckdb_history, ~/.sqlite_history
-- stale or app-owned surfaces: ~/.config/fish, ~/.claude, ~/.claude.json, ~/.config/github-copilot
-
 ## Using GNU Stow
 - from repo root: `stow --target="$HOME" zsh zshenv nvim gh git kitty lazygit bottom starship`
 - include newer config packages: `stow --target="$HOME" atuin aws codex`
-- remove a package: `stow -D zsh`
+- remove a package: `stow -D --target="$HOME" zsh`
+- first-time Codex sync: `stow -n -v --target="$HOME" codex` should be clean before replacing or adopting existing `~/.codex` files
 
 ## Bootstrap
 - install packages and restow core config: `./bootstrap.sh`

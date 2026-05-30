@@ -5,7 +5,7 @@ github-copilot/
 uv/
 .DS_Store
 
-# Codex state, auth, caches, and generated runtime data
+# Codex state, auth, caches, generated runtime data, and bundled skills
 codex/.codex/.codex-global-state.json*
 codex/.codex/.tmp/
 codex/.codex/ambient-suggestions/
@@ -27,6 +27,7 @@ codex/.codex/plugins/cache/
 codex/.codex/session_index.jsonl
 codex/.codex/sessions/
 codex/.codex/shell_snapshots/
+codex/.codex/skills/.system/
 codex/.codex/sqlite/
 codex/.codex/state*.sqlite*
 codex/.codex/tmp/
