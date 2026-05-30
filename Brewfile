@@ -73,6 +73,8 @@ brew "starship"
 brew "stow"
 # C++ Library Manager
 brew "vcpkg"
+# Extremely fast Python package and project manager, written in Rust
+brew "uv"
 # Internet file retriever
 brew "wget"
 # Blazing fast terminal file manager written in Rust, based on async I/O
