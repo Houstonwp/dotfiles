@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repo Main Refresh"
+  short_description: "Refresh main before new worktrees"
+  default_prompt: "Use $repo-main-refresh to verify this repo, safely refresh local main from origin/main, and tell me whether it is safe to create a new worktree."
